@@ -7,5 +7,5 @@
 // require('./example')
 
 $(() => {
-  // your JS code goes here
+  $('#show-books').on('click', resEvents.onViewAvailableVideos)
 })
