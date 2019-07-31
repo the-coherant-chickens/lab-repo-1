@@ -3,7 +3,6 @@
 const store = require('../store')
 const showBooksTemplate = require('../templates/book-listing.handlebars')
 
-
 const successMessage = message => {
   $('#book-status').text(message).fadeIn(1000)
   $('#book-status').addClass('success')
@@ -24,7 +23,6 @@ const failureMessage = message => {
 }
 
 const indexBooksSuccess = responseData => {
-
   successMessage('Here ara ya books guyzzz!')
   store.books = responseData.books
 
